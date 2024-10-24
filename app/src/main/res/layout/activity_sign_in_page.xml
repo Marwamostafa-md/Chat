@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInPage.SignInPageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:padding="10dp"
+
+            android:textColor="@color/bn"
+
+            android:text="@string/login"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditAcount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/bn"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:hint="@string/Account"
+            android:minHeight="48dp" />
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/EditPassowrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/password"
+
+            android:inputType="textPassword"
+            android:background="@drawable/edit"
+            android:textColorHint="@color/bn"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:minHeight="48dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:text="@string/LoginB"
+                android:textStyle="bold"
+
+
+                android:layout_weight="1"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

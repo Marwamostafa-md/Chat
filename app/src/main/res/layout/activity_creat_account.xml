@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreatAccount.CreatAccountActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Creatacount"
+            android:textSize="30dp"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/bn"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:textColorHint="@color/bn"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:hint="@string/username"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:textColorHint="@color/bn"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:hint="@string/Account"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editpassowrd"
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:hint="@string/password"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/bn"
+            android:background="@drawable/edit"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/confirm"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:hint="@string/confirm"
+            android:padding="10dp"
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/bn"
+            android:background="@drawable/edit"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="171dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="@string/signup"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/haveaccount"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="@string/haveacount"
+        android:textColor="@color/white"
+
+        />
+</LinearLayout>
